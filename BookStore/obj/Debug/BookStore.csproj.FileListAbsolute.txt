@@ -1,0 +1,8 @@
+C:\Users\teodora.corkovic\Desktop\New Solution\BookStore\bin\Debug\BookStore.exe.config
+C:\Users\teodora.corkovic\Desktop\New Solution\BookStore\bin\Debug\BookStore.exe
+C:\Users\teodora.corkovic\Desktop\New Solution\BookStore\bin\Debug\BookStore.pdb
+C:\Users\teodora.corkovic\Desktop\New Solution\BookStore\obj\Debug\BookStore.csproj.AssemblyReference.cache
+C:\Users\teodora.corkovic\Desktop\New Solution\BookStore\obj\Debug\BookStore.csproj.SuggestedBindingRedirects.cache
+C:\Users\teodora.corkovic\Desktop\New Solution\BookStore\obj\Debug\BookStore.csproj.CoreCompileInputs.cache
+C:\Users\teodora.corkovic\Desktop\New Solution\BookStore\obj\Debug\BookStore.exe
+C:\Users\teodora.corkovic\Desktop\New Solution\BookStore\obj\Debug\BookStore.pdb
