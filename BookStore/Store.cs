@@ -4,14 +4,15 @@ namespace BookStore
 {
     internal static class Store
     {
+        private static float newPrice;
+
         public static float CalculateDiscount(float discount, float price)
         {
-            float newPrice = price / ((100 + discount) / 100);
-            Console.WriteLine("The price with the discount is: " + newPrice + "$");
-            if (discount > 0 && discount < 100)
+                      
+            if (discount > 0 && discount <= 100)
             {
-                return newPrice;
-                
+                newPrice = price - (price * discount / 100);
+                Console.WriteLine("The price with the discount of " + discount + "% is: " + newPrice + "$");
             }
             else if(discount == 0)
             {
@@ -21,8 +22,8 @@ namespace BookStore
             {
                 Console.WriteLine("Invalid value of discount!");
             }
-            return price;
-           
+            return newPrice;
+            
         }     
 
         public static bool IsPublicationAvailable(int available)

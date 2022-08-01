@@ -13,7 +13,7 @@
 
             publicationObj.GetDetails();
 
-            Store.CalculateDiscount(10, 14.99F);
+            Store.CalculateDiscount(100,14.99F);
 
             Store.SellPublication(5, 1);
 
