@@ -13,13 +13,11 @@ namespace BookStore
 
             publicationObj.GetDetails();
 
-            publicationObj.UpdatePrice(14.99F);
-
-            publicationObj.GetDetails();
-
-            Store.CalculateDiscount(10, publicationObj);
+            publicationObj.UpdatePrice(Store.CalculateDiscount(10, publicationObj));
 
             Store.SellPublication(publicationObj, 1);
+
+            publicationObj.GetDetails();
 
             //create an array of 3 publications and show their details
 
