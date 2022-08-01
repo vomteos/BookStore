@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookStore
+﻿namespace BookStore
 {
     internal class Program
     {
@@ -19,18 +13,10 @@ namespace BookStore
 
             publicationObj.GetDetails();
 
+            Store.CalculateDiscount(10, 14.99F);
 
-            //Use methods to calculate discount
-            //Use method to check availability after Selling publication
-            
+            Store.SellPublication(5, 1);
 
-            //Store.CalculateDiscount(10);
-
-            //Store.SellPublication(3);
-
-            //Store.IsPublicationAvailable();
         }
-
-
     }
 }
