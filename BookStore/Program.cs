@@ -9,17 +9,17 @@ namespace BookStore
         static void Main(string[] args)
         {
 
-            //var publicationObj = new Publication("Harry Potter and the Chamber of secrets", 15.99F, 5);
+            var publicationObj = new Publication("Harry Potter and the Chamber of secrets", 15.99F, 5);
 
-            //publicationObj.GetDetails();
+            publicationObj.GetDetails();
 
-            //publicationObj.UpdatePrice(14.99F);
+            publicationObj.UpdatePrice(14.99F);
 
-            //publicationObj.GetDetails();
+            publicationObj.GetDetails();
 
-            //Store.CalculateDiscount(100,14.99F);
+            Store.CalculateDiscount(10, publicationObj);
 
-            //Store.SellPublication(5, 1);
+            Store.SellPublication(publicationObj, 1);
 
             //create an array of 3 publications and show their details
 
@@ -35,11 +35,8 @@ namespace BookStore
 
             //sell a book 
 
-
-            Store.SellPublication(books[0].Available, 2);
-
-
-
+            Store.SellPublication(books[1], 2);
+            
             //show details of publications containing two or less books
 
             foreach (var book in books)

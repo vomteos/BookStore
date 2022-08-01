@@ -6,17 +6,17 @@ namespace BookStore
     {
         private static float newPrice;
 
-        public static float CalculateDiscount(float discount, float price)
+        public static float CalculateDiscount(float discount, Publication p)
         {
                       
             if (discount > 0 && discount < 100)
             {
-                newPrice = price - (price * discount / 100);
+                newPrice = p.Price - (p.Price * discount / 100);
                 Console.WriteLine("The price with the discount of " + discount + "% is: " + newPrice + "$");
             }
             else if(discount == 0)
             {
-                Console.WriteLine("There is no discount for this publication");
+                Console.WriteLine("There is no discount for publication " + p.Title);
             }
             else
             {
@@ -26,23 +26,23 @@ namespace BookStore
             
         }     
 
-        public static bool IsPublicationAvailable(int available)
+        public static bool IsPublicationAvailable(Publication p)
         {
-            return available > 0;
+            return p.Available > 0;
         }
 
-        public static int SellPublication(int available, int decrease)
+        public static int SellPublication(Publication p, int decrease)
         {
-            if (IsPublicationAvailable(available))
+            if (IsPublicationAvailable(p))
             {
-                available -= decrease;
-                Console.WriteLine("The number of remailing books: " + available);
+                p.Available -= decrease;
+                Console.WriteLine("The number of remaining books of publication " + p.Title + ": " + p.Available);
             }
             else
             {
-                Console.WriteLine("There are no available books.");
+                Console.WriteLine("There are no available books from publication " + p.Title);
             }
-            return available;
+            return p.Available;
         }      
     }
 }
