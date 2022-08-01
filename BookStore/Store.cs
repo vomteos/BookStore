@@ -9,7 +9,7 @@ namespace BookStore
         public static float CalculateDiscount(float discount, float price)
         {
                       
-            if (discount > 0 && discount <= 100)
+            if (discount > 0 && discount < 100)
             {
                 newPrice = price - (price * discount / 100);
                 Console.WriteLine("The price with the discount of " + discount + "% is: " + newPrice + "$");
